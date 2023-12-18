@@ -13,5 +13,12 @@ public class Note {
     private String title;
     private String content;
 
+    public Note(long l, String s, String s1) {
+
+    }
+
+    public Note() {
+
+    }
 }
 
