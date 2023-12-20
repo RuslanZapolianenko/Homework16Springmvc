@@ -16,6 +16,10 @@ import java.util.List;
 public class NoteService {
     private final NoteRepository noteRepository;
 
+    public NoteService(NoteRepository noteRepository) {
+        this.noteRepository = noteRepository;
+    }
+
     public List<Note> findAll() {
         log.info("Finding all notes");
         return noteRepository.findAll();
